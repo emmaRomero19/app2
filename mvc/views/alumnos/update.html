@@ -1,4 +1,3 @@
-$def with(matricula,name,paterno,materno,edad,fecha,genero,state)
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -10,7 +9,7 @@ $def with(matricula,name,paterno,materno,edad,fecha,genero,state)
   <center><h1>UPDATE DATA</h1></center>
   
   <center>
-    <form method="POST">
+    <form method="POST" action="">
       <div class="grid-container grid-padding-x">
         <div class="grid-x grid-padding-x">
           <div class="cell medium-3" style="background-color:  seashell;">       
@@ -18,7 +17,7 @@ $def with(matricula,name,paterno,materno,edad,fecha,genero,state)
           <div class="cell medium-6" style="background-color:  seashell;">
             <label>
               <h5>MATRICULA</h5>
-              <input type="number" placeholder="MATRICULA" value="$matricula"/>
+              <input type="number" placeholder="MATRICULA" required>
             </label>          
           </div>
           <div class="cell medium-3" style="background-color:  seashell;">
@@ -30,28 +29,28 @@ $def with(matricula,name,paterno,materno,edad,fecha,genero,state)
           <div class="cell small-6 large-4" style="background-color: seashell;">
             <label>
               <h5>NAME </h5>
-              <input type="text" placeholder="NAME" value="$name"/>
+              <input type="text" placeholder="NAME"  required/>
             </label>
           </div>
 
           <div class="cell small-6 large-4" style="background-color:  seashell;">
             <label>
               <h5>SURNAME</h5>
-              <input type="text" placeholder="PATERNAL SURNAME" value="$paterno"/>
+              <input type="text" placeholder="PATERNAL SURNAME" required/>
             </label>
           </div>
 
           <div class="cell small-6 large-4" style="background-color:  seashell;">
             <label>
               <h5 style="color:seashell;">.</h5>
-              <input type="text" placeholder="MATERNAL SURNAME" value="$materno"/>
+              <input type="text" placeholder="MATERNAL SURNAME" required/>
             </label>
           </div>
           
           <div class="cell small-6 large-3" style="background-color:   seashell;">
             <label>
               <h5>AGE</h5>
-              <input type="NUMBER" placeholder="AGE" value="$edad"/>
+              <input type="NUMBER" placeholder="AGE" required/>
             </label>
           </div> 
           
@@ -60,22 +59,15 @@ $def with(matricula,name,paterno,materno,edad,fecha,genero,state)
               <h5>BIRTHDAY</h5>
             </label>
             <div class="grid-x grid-padding-x">
-                <input type="date" value="$fecha"/>
+                <input type="date" required/>
             </div>
           </div>
           <div class="cell small-6 large-3" style="background-color:  seashell;">
             <label>
               <fieldset class="large-5 cell">
                 <legend><h5>GENDER</h5></legend>
-                $if genero=="femenino":
-                  <input type="radio" name="GENERO" value="MUJER" id="MUJER" checked/><label for="MUJER">FEMENINO</label>
-                  <input type="radio" name="GENERO" value="HOMBRE" id="HOMBRE"/><label for="HOMBRE">MASCULINO</label>
-                $if genero=="masculino":
-                  <input type="radio" name="GENERO" value="MUJER" id="MUJER"/><label for="MUJER">FEMENINO</label>
-                  <input type="radio" name="GENERO" value="HOMBRE" id="HOMBRE" checked/><label for="HOMBRE">MASCULINO</label>
-                $else:
-                  <input type="radio" name="GENERO" value="MUJER" id="MUJER"/><label for="MUJER">FEMENINO</label>
-                  <input type="radio" name="GENERO" value="HOMBRE" id="HOMBRE"/><label for="HOMBRE">MASCULINO</label>
+                  <input type="radio" name="GENERO" value="MUJER" id="MUJER" required/><label for="MUJER">FEMENINO</label>
+                  <input type="radio" name="GENERO" value="HOMBRE" id="HOMBRE" required/><label for="HOMBRE">MASCULINO</label>
               </fieldset>
             </label>
           </div>
@@ -87,7 +79,7 @@ $def with(matricula,name,paterno,materno,edad,fecha,genero,state)
           <div class="cell medium-6" style="background-color:  seashell;">
             <label>
               <h5>STATE</h5>
-              <input type="text" placeholder="ESTADO" value="$state"/>
+              <input type="text" placeholder="ESTADO" required/>
             </label>          
           </div>
           <div class="cell medium-3" style="background-color:  seashell;">

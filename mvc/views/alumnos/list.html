@@ -3,7 +3,7 @@ $def with(matricula,name,paterno,materno,edad,fecha,genero,state)
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="./static/css/foundation.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/foundation.css" />
     <title>MVC | List</title>
 </head>
 <body>
@@ -62,7 +62,7 @@ $def with(matricula,name,paterno,materno,edad,fecha,genero,state)
                 $else:
                     <td></td>
                 <td> <a class="button small expanded" style="background-color:rgb(255, 201, 201); color: red;" href="/delete/?matricula=$matricula&name=$name&paterno=$paterno&materno=$materno&edad=$edad&fecha=$fecha&genero=$genero&state=$state">DELETE</a></td>
-                <td> <a class="button small expanded" style="background-color: rgb(255, 224, 195); color: rgb(255, 123, 0);" href="/update/?matricula=$matricula&name=$name&paterno=$paterno&materno=$materno&edad=$edad&fecha=$fecha&genero=$genero&state=$state">UPDATE</a></td>
+                <td> <a class="button small expanded" style="background-color: rgb(255, 224, 195); color: rgb(255, 123, 0);" href="/update" type="submit">UPDATE</a></td>
                 <td> <a class="button small expanded" style="background-color: rgb(255, 247, 0); color: rgb(0, 0, 0);" href="/view?matricula=$matricula&name=$name&paterno=$paterno&materno=$materno&edad=$edad&fecha=$fecha&genero=$genero&state=$state">VIEW</a></td>            
             </tr>
           </tbody>
