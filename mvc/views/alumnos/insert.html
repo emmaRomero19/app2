@@ -12,7 +12,7 @@
   <center><h1>INSERT DATA</h1></center>
   
   <center>
-    <form method="POST">
+    <form method="POST" action="">
       <div class="grid-container grid-padding-x">
         <div class="grid-x grid-padding-x">
           <div class="cell medium-3" style="background-color:  seashell;">       
@@ -20,7 +20,7 @@
           <div class="cell medium-6" style="background-color:  seashell;">
             <label>
               <h5>MATRICULA</h5>
-              <input type="number" placeholder="MATRICULA"/>
+              <input type="number" placeholder="MATRICULA"  id="matricula" name="matricula"/>
             </label>          
           </div>
           <div class="cell medium-3" style="background-color:  seashell;">
@@ -32,28 +32,28 @@
           <div class="cell small-6 large-4" style="background-color: seashell;">
             <label>
               <h5>NAME </h5>
-              <input type="text" placeholder="NAME"/>
+              <input type="text" placeholder="NAME" id="name" name="name"/>
             </label>
           </div>
 
           <div class="cell small-6 large-4" style="background-color:  seashell;">
             <label>
               <h5>SURNAME</h5>
-              <input type="text" placeholder="PATERNAL SURNAME"/>
+              <input type="text" placeholder="PATERNAL SURNAME" id="paterno" name="paterno"/>
             </label>
           </div>
 
           <div class="cell small-6 large-4" style="background-color:  seashell;">
             <label>
               <h5 style="color:seashell;">.</h5>
-              <input type="text" placeholder="MATERNAL SURNAME"/>
+              <input type="text" placeholder="MATERNAL SURNAME"  id="materno" name="materno"/>
             </label>
           </div>
           
           <div class="cell small-6 large-3" style="background-color:   seashell;">
             <label>
               <h5>AGE</h5>
-              <input type="NUMBER" placeholder="AGE"/>
+              <input type="NUMBER" placeholder="AGE"  id="edad" name="edad"/>
             </label>
           </div> 
           
@@ -62,15 +62,15 @@
               <h5>BIRTHDAY</h5>
             </label>
             <div class="grid-x grid-padding-x">
-                <input type="date" placeholder="dd/mm/yy"/>
+                <input type="date" placeholder="dd/mm/yyyy"  id="fecha" name="fecha"/>
             </div>
           </div>
           <div class="cell small-6 large-3" style="background-color:  seashell;">
             <label>
               <fieldset class="large-5 cell">
                 <legend><h5>GENDER</h5></legend>
-                <input type="radio" name="GENERO" value="MUJER" id="MUJER"/><label for="MUJER">FEMENINO</label>
-                <input type="radio" name="GENERO" value="HOMBRE" id="HOMBRE"/><label for="HOMBRE">MASCULINO</label>
+                <input type="radio" value="femenino" name="genero"/><label for="MUJER">FEMENINO</label>
+                <input type="radio" value="masculino" name="genero"/><label for="HOMBRE">MASCULINO</label>
               </fieldset>
             </label>
           </div>
@@ -82,7 +82,7 @@
           <div class="cell medium-6" style="background-color:  seashell;">
             <label>
               <h5>STATE</h5>
-              <input type="text" placeholder="ESTADO"/>
+              <input type="text" placeholder="ESTADO"  id="state" name="state"/>
             </label>          
           </div>
           <div class="cell medium-3" style="background-color:  seashell;">
