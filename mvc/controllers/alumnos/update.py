@@ -1,5 +1,5 @@
 import web
-render=web.template.render('mvc/views/actions/')
+render=web.template.render('mvc/views/alumnos/')
 
 class Update:
     def GET(self):
