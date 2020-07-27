@@ -61,9 +61,9 @@ $def with(matricula,name,paterno,materno,edad,fecha,genero,state)
                     <td>$state</td>
                 $else:
                     <td></td>
-                <td> <a class="button small expanded" style="background-color:rgb(255, 201, 201); color: red;" href="/delete">DELETE</a></td>
-                <td> <a class="button small expanded" style="background-color: rgb(255, 224, 195); color: rgb(255, 123, 0);" href="/update">UPDATE</a></td>
-                <td> <a class="button small expanded" style="background-color: rgb(255, 247, 0); color: rgb(0, 0, 0);" href="/view">VIEW</a></td>            
+                <td> <a class="button small expanded" style="background-color:rgb(255, 201, 201); color: red;" href="/delete/?matricula=$matricula&name=$name&paterno=$paterno&materno=$materno&edad=$edad&fecha=$fecha&genero=$genero&state=$state">DELETE</a></td>
+                <td> <a class="button small expanded" style="background-color: rgb(255, 224, 195); color: rgb(255, 123, 0);" href="/update/?matricula=$matricula&name=$name&paterno=$paterno&materno=$materno&edad=$edad&fecha=$fecha&genero=$genero&state=$state">UPDATE</a></td>
+                <td> <a class="button small expanded" style="background-color: rgb(255, 247, 0); color: rgb(0, 0, 0);" href="/view?matricula=$matricula&name=$name&paterno=$paterno&materno=$materno&edad=$edad&fecha=$fecha&genero=$genero&state=$state">VIEW</a></td>            
             </tr>
           </tbody>
     </table>
